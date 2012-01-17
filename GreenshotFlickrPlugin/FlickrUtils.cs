@@ -24,11 +24,9 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Net;
-using System.Text;
-using System.Web;
-using GreenshotPlugin.Controls;
-using GreenshotPlugin.Core;
 using FlickrNet;
+using GreenshotPlugin.Core;
+using IniFile;
 
 namespace GreenshotFlickrPlugin {
 	/// <summary>
