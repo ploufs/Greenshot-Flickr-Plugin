@@ -121,7 +121,7 @@ namespace GreenshotFlickrPlugin {
 			set {combobox_uploadimageformat.Text = value;}
 		}
 
-		public string DefaultSize
+		public string PictureDefaultSize
 		{
 			get { return comboBox_DefaultSize.Text; }
 			set { comboBox_DefaultSize.Text = value; }

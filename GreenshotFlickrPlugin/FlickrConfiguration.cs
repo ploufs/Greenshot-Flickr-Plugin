@@ -104,7 +104,7 @@ namespace GreenshotFlickrPlugin {
 			settingsForm.UploadFormat = this.UploadFormat.ToString();
 			settingsForm.SafetyLevel = this.SafetyLevel.ToString();
 			settingsForm.HiddenFromSearch = this.HiddenFromSearch.ToString();
-			settingsForm.DefaultSize = this.PictureDisplaySize.ToString();
+			settingsForm.PictureDefaultSize = this.PictureDisplaySize.ToString();
 			settingsForm.AfterUploadOpenHistory = this.AfterUploadOpenHistory;
 			settingsForm.AfterUploadLinkToClipBoard  = this.AfterUploadLinkToClipBoard;
 			DialogResult result = settingsForm.ShowDialog();
@@ -118,7 +118,7 @@ namespace GreenshotFlickrPlugin {
 				this.SafetyLevel = (FlickrNet.SafetyLevel)Enum.Parse(typeof(FlickrNet.SafetyLevel), settingsForm.SafetyLevel);
 				this.HiddenFromSearch = (FlickrNet.HiddenFromSearch)Enum.Parse(typeof(FlickrNet.HiddenFromSearch), settingsForm.HiddenFromSearch);
 				this.UploadFormat = (OutputFormat)Enum.Parse(typeof(OutputFormat), settingsForm.UploadFormat.ToLower());
-				this.PictureDisplaySize = (PictureDisplaySize)Enum.Parse(typeof(PictureDisplaySize), settingsForm.DefaultSize);
+				this.PictureDisplaySize = (PictureDisplaySize)Enum.Parse(typeof(PictureDisplaySize), settingsForm.PictureDefaultSize);
 
 				this.AfterUploadOpenHistory=settingsForm.AfterUploadOpenHistory;
 				this.AfterUploadLinkToClipBoard=settingsForm.AfterUploadLinkToClipBoard;
